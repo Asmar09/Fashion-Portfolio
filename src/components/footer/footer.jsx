@@ -13,8 +13,10 @@ const partnerBox = () => (
         <Col xs={12} sm={6} md={6}>
           <div className="footer-box">
             <img src={Logo} alt="logo" />
-            <p>© 2021 - Glow with Flow,All Right Reserved</p>
-            <p>design by <strong><a style={{color: 'white'}} href="https://www.linkedin.com/in/asmar-munir-806109159/">Asmar Munir</a></strong></p>
+            <p>© 2021 - Glow with Flow,All Right Reserved
+               <br />
+               design by <strong><a style={{color: 'white'}} href="https://www.linkedin.com/in/asmar-munir-806109159/">Asmar Munir</a></strong>
+            </p>
           </div>
         </Col>
         <Col xs={12} sm={6} md={6}>

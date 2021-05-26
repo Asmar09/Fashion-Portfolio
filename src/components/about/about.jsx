@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col } from "react-flexbox-grid";
 import "./about.scss";
-// Components
-import TeamBox from './teamBox';
-import TeamInfo from "./teamInfo";
+
 import Title from "../ui-components/title/title";
 // Assets
 import Image01 from "../../assets/about/Image01.png";
 import Image02 from "../../assets/about/Image02.png";
+import ProfilePage from "../profile-page/profilepage";
 
-const about = () => (
+const About = () => {
+
+  const [active , setActive] = useState(false)
+
+  return(
   <div id="about">
     <div className="wrapper">
       <Title title="ABOUT ME." />
@@ -19,20 +22,58 @@ const about = () => (
       </p>
       <Row>
         <Col md={12} lg={4}>
-          <TeamBox avatar={Image01} name="Butterflies and Snowflakes" job="Handmade digitally drawn extractions"/>
+          <div className="team__box flex-center">
+            <img src={Image01} alt="person" />
+            <div className="team__box-info">
+              <p className="font15 weight800">Butterflies and Snowflakes</p>
+              <p className="font12 weight500">
+                Handmade digitally drawn extractions
+              </p>
+            </div>
+          </div>
         </Col>
         <Col md={12} lg={4}>
-          <TeamBox avatar={Image02} name="Snowflakes & Butterflies" job="Handmade digitally drawn extractions" />
+          <div className="team__box flex-center">
+            <img src={Image02} alt="person" />
+            <div className="team__box-info">
+              <p className="font15 weight800">Snowflakes & Butterflies</p>
+              <p className="font12 weight500">
+                Handmade digitally drawn extractions
+              </p>
+            </div>
+          </div>
         </Col>
         <Col md={12} lg={4}>
-          <TeamInfo />
+          <div className="team__info flex-center">
+            <div>
+              <h4 className="font20 weight800">Little About Me</h4>
+              <p className="font12 weight500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod temp orincididunt ut labore et dolore magna aliqua.
+              </p>
+              <div onClick={() => setActive(!active)}>
+                {active === false ? (
+                  <p className="font12 weight500">Read More</p>
+                ) : (
+                  <p className="font12 weight500">Read Less</p>
+                )}
+              </div>
+            </div>
+          </div>
         </Col>
       </Row>
     </div>
+
+    { 
+     active ?  <div style={{marginTop: '30px'}}> <ProfilePage /> </div>
+ : null
+    }
   </div>
-);
 
-export default about;
 
+  )
+};
+
+export default About;
 
 // #FFE600
