@@ -17,8 +17,8 @@ const About = () => {
     <div className="wrapper">
       <Title title="ABOUT ME." />
       <p className="font12">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt<br></br>ut labore et dolore magna aliqua.
+      Assisted with design process from start to finish including concept, design, presentation boards, and line sheets.
+      <br></br>Responsible for various other duties as assigned.
       </p>
       <Row>
         <Col md={12} lg={4}>
@@ -48,8 +48,8 @@ const About = () => {
             <div>
               <h4 className="font20 weight800">Little About Me</h4>
               <p className="font12 weight500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod temp orincididunt ut labore et dolore magna aliqua.
+              Sketch rough drawing to understand about the requirement of clients and write specification such as color, 
+              material type, construction and many more.
               </p>
               <div onClick={() => setActive(!active)}>
                 {active === false ? (
@@ -65,7 +65,7 @@ const About = () => {
     </div>
 
     { 
-     active ?  <div style={{marginTop: '30px'}}> <ProfilePage /> </div>
+     active ?  <div style={{marginTop: '100px'}}> <ProfilePage /> </div>
  : null
     }
   </div>
@@ -76,4 +76,3 @@ const About = () => {
 
 export default About;
 
-// #FFE600

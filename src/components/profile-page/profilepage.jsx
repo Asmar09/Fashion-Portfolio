@@ -11,7 +11,7 @@ import Favorite from "@material-ui/icons/Favorite";
 import GridContainer from "./PageStyles/GridContainer";
 import GridItem from "./PageStyles/GridItems";
 import NavPills from "./PageStyles/NavPills";
-import profile from "../../assets/profilePage/images/faces/christian.jpg";
+import profile from "../../assets/profilePage/images/faces/anishbah.jpg";
 import studio1 from "../../assets/profilePage/images/examples/studio-1.jpg";
 import studio2 from "../../assets/profilePage/images/examples/studio-2.jpg";
 import studio3 from "../../assets/profilePage/images/examples/studio-3.jpg";
@@ -44,23 +44,22 @@ const ProfilePage = () => {
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
                   <div>
-                  <h5>close</h5>
-                    <img src={profile} alt="..." className={imageClasses} />
-                      
+                    <img src={profile} alt="..." className={imageClasses} />   
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h3 className={classes.title}>Anishbah Nadeem</h3>
+                    <h6>FASHION DESIGNER</h6>
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
               <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+              Handled woolen fabrics and designed accessories,
+              Used to examine the garments on model to get better and desired results,
+              Responsible for helping the workers who draw and cut the patterns,
+              Attend so many fashion shows and go through garment magazines to analyze new trends, 
+              customer preferences and market need.{" "}
               </p>
             </div>
             <GridContainer justify="center">
@@ -186,6 +185,4 @@ const ProfilePage = () => {
       </>
   );
 }
-
-
 export default ProfilePage

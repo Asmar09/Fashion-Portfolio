@@ -35,7 +35,7 @@ export const container = {
   };
   
 
-  export const primaryColor = "#9c27b0";
+  export const primaryColor = "#668cff";
   export const warningColor = "#ff9800";
   export const dangerColor = "#f44336";
   export const successColor = "#4caf50";

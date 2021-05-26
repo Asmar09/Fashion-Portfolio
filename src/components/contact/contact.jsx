@@ -117,7 +117,7 @@ class Contact extends React.Component {
         <div className="wrapper">
           <Title title="Contact Me." />
           <p className="font12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br></br>ut labore et dolore magna aliqua.
+          Looking for a position of fashion designing where illustration, technical and design skills are useful.<br></br>gain reputable work assignments to enhance reputation and skills in this field.
           </p>
 
           <Row className="padding40">
